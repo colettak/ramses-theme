@@ -31,6 +31,12 @@
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'ramses' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
+
 	</header><!-- #masthead -->
+	<div class="content-wrapper">
+	<a class="menuButton" href="#">Menu</a>
 
 	<div id="content" class="site-content">
+
+
+

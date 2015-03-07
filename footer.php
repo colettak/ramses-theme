@@ -9,8 +9,7 @@
 ?>
 
 	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
+		<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'ramses' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'ramses' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
@@ -19,7 +18,10 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+</div><!-- #page-wrapper -->
+
 <?php wp_footer(); ?>
+
 
 </body>
 </html>

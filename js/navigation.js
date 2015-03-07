@@ -3,6 +3,21 @@
  *
  * Handles toggling the navigation menu for small screens.
  */
+
+
+ (function($) {
+
+	// $ Works! You can test it with next line if you like
+	// console.log($);
+	 $(document).ready(function() {
+  $('.menuButton').on('click', function() {
+    $('#page').toggleClass('menuOpen');
+
+  });
+	 });
+})( jQuery );
+
+ /*
 ( function() {
 	var container, button, menu;
 
@@ -42,3 +57,4 @@
 		}
 	};
 } )();
+*/

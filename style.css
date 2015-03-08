@@ -229,7 +229,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -289,7 +289,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: White; }
+  background-color: #313338; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -401,11 +401,12 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: #88aaff;
+  text-decoration: none; }
   a:visited {
-    color: purple; }
+    color: #88aaff; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #7799ee; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -556,6 +557,8 @@ a {
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
+  .widget h1 {
+    font-weight: 300; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -695,13 +698,12 @@ object {
 #page {
   min-height: 100vh; }
 
-#page.menuOpen .content-wrapper {
-  margin-left: 260px; }
 #page.menuOpen .site-header {
-  margin-left: 0; }
+  margin-left: 0;
+  z-index: 40;
+  box-shadow: 2px -5px 3px #1A1A1A; }
 
 .content-wrapper {
-  padding: 15px;
   background: #efefef;
   z-index: 30;
   margin-left: 0; }
@@ -721,7 +723,13 @@ object {
 
 .site-content {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 15px; }
+
+.site-footer {
+  padding: 15px;
+  background: #313338;
+  border-top: 1px solid #1A1A1A; }
 
 @media (min-width: 768px) {
   .menuButton {

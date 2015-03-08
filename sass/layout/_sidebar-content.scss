@@ -4,15 +4,16 @@
 
 #page.menuOpen{
   .content-wrapper{
-    margin-left:$size__site-sidebar;
+
   }
   .site-header {
     margin-left:0;
+    z-index:40;
+    box-shadow: 2px -5px 3px #1A1A1A;
   }
 }
 
 .content-wrapper{
-  padding: $size__default-padding;
   background: $color__background-body;
   z-index:30;
   margin-left:0;
@@ -37,8 +38,14 @@
 .site-content{
   display:flex;
   flex-direction: column;
+  padding: $size__default-padding;
 }
 
+.site-footer {
+  padding: $size__default-padding;
+  background: $color__background-header;
+  border-top: 1px solid #1A1A1A;
+}
 
 @media (min-width: 768px) {
 

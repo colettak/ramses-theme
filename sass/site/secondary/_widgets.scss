@@ -1,5 +1,8 @@
 .widget {
 	margin: 0 0 1.5em;
+  background: white;
+  padding: 0px 15px 5px;
+  box-shadow: 1px 0 2px #ccc;
 
 	/* Make sure select elements fit in widgets. */
 	select {
@@ -7,12 +10,37 @@
 	}
 
 	h1 {
-	  font-weight: 300;
+  	font-weight: 200;
+    background: $color__light-gray;
+    margin: 0 -15px 10px;
+    padding: 0 15px;
+    font-size: 1.4em;
 
+	}
+
+	ul, ol{
+	  list-style:none;
+	  margin:0;
+	  padding:0;
+
+	  li {
+
+	  }
 	}
 }
 
+
+.widget:hover{
+  box-shadow: 1px 0 8px #aaa;
+  h1{
+    background: $color__secondary;
+  }
+}
 /* Search widget. */
 .widget_search .search-submit {
 	display: none;
+}
+
+.widget_search {
+  padding:0;
 }

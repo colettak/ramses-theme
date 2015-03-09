@@ -29,6 +29,7 @@
 
 .content-area {
   flex:2;
+  margin-right: $size__default-padding;
 }
 
 .widget-area{
@@ -44,7 +45,7 @@
 
 @media (min-width: 768px) {
 
-  .menuButton{
+  .top-bar{
     display:none;
   }
   .content-wrapper{

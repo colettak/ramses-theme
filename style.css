@@ -632,6 +632,11 @@ a {
 10.4 Header
 --------------------------------------------------------------*/
 .site-header {
+  background: #313338;
+  color: #ccc; }
+
+.top-bar {
+  padding: 10px 15px;
   background: #313338; }
 
 /*--------------------------------------------------------------
@@ -743,7 +748,8 @@ object {
   margin-left: -260px; }
 
 .content-area {
-  flex: 2; }
+  flex: 2;
+  margin-right: 15px; }
 
 .widget-area {
   flex: 1; }
@@ -754,7 +760,7 @@ object {
   padding: 15px; }
 
 @media (min-width: 768px) {
-  .menuButton {
+  .top-bar {
     display: none; }
 
   .content-wrapper {

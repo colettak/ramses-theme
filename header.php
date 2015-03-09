@@ -34,7 +34,9 @@
 
 	</header><!-- #masthead -->
 	<div class="content-wrapper">
-	<a class="menuButton" href="#">Menu</a>
+	<div class = "top-bar">
+	  <a class="menuButton" href="#">Menu</a>
+	</div>
 
 	<div id="content" class="site-content">
 

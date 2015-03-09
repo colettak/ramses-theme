@@ -7,3 +7,23 @@
   padding: 10px 15px;
   background: $color__background-header;
 }
+
+.site-branding{
+  background: $color__primary;
+
+  &:hover{
+    background:$color__secondary;
+  }
+  .site-title, .site-description{
+    padding: $size__default-padding;
+  }
+
+  a {
+    color: white;
+  }
+
+}
+
+.main-navigation {
+  padding: $size__default-padding;
+}

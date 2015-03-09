@@ -1,6 +1,3 @@
-#page{
-  min-height: 100vh;
-}
 
 #page.menuOpen{
   .content-wrapper{
@@ -14,13 +11,11 @@
 }
 
 .content-wrapper{
-  background: $color__background-body;
   z-index:30;
   margin-left:0;
 }
 
 .site-header{
-  padding: $size__default-padding;
   position:fixed;
   width:$size__site-sidebar;
   min-height: 100vh;
@@ -29,17 +24,24 @@
 
 .content-area {
   flex:2;
-  margin-right: $size__default-padding;
+}
+
+.site-main {
+  background: white;
+  padding: $size__default-padding;
+  box-shadow: 0 0 3px #ccc;
 }
 
 .widget-area{
   flex:1;
+
 }
 
 .site-content{
   display:flex;
   flex-direction: column;
   padding: $size__default-padding;
+  min-height:90vh;
 }
 
 
@@ -62,6 +64,10 @@
 
   .site-header{
     margin-left:0;
+  }
+
+  .widget-area{
+    margin-left: $size__default-padding;
   }
 }
 

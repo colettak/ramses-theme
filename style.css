@@ -235,7 +235,8 @@ textarea {
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  margin: 0; }
 
 p {
   margin-bottom: 1.5em; }
@@ -289,7 +290,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: #313338; }
+  background-color: #D8D8D8; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -388,6 +389,8 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
   padding: 3px; }
 
 textarea {
@@ -582,6 +585,10 @@ a {
 
 .widget_search {
   padding: 0; }
+  .widget_search input {
+    border-radius: 0; }
+  .widget_search .search-field {
+    width: 100%; }
 
 /*--------------------------------------------------------------
 10.0 Content
@@ -639,13 +646,26 @@ a {
   padding: 10px 15px;
   background: #313338; }
 
+.site-branding {
+  background: #56a0d3; }
+  .site-branding:hover {
+    background: #27ca4e; }
+  .site-branding .site-title, .site-branding .site-description {
+    padding: 15px; }
+  .site-branding a {
+    color: white; }
+
+.main-navigation {
+  padding: 15px; }
+
 /*--------------------------------------------------------------
 10.5 Footer
 --------------------------------------------------------------*/
 .site-footer {
   padding: 15px;
-  background: #FFF;
-  border-top: 1px solid #ccc; }
+  background: #D8D8D8;
+  border-top: 1px solid #ccc;
+  min-height: 10vh; }
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll
@@ -727,29 +747,28 @@ object {
 /*--------------------------------------------------------------
 13.0 Layouts
 --------------------------------------------------------------*/
-#page {
-  min-height: 100vh; }
-
 #page.menuOpen .site-header {
   margin-left: 0;
   z-index: 40;
   box-shadow: 2px -5px 3px #1A1A1A; }
 
 .content-wrapper {
-  background: #efefef;
   z-index: 30;
   margin-left: 0; }
 
 .site-header {
-  padding: 15px;
   position: fixed;
   width: 260px;
   min-height: 100vh;
   margin-left: -260px; }
 
 .content-area {
-  flex: 2;
-  margin-right: 15px; }
+  flex: 2; }
+
+.site-main {
+  background: white;
+  padding: 15px;
+  box-shadow: 0 0 3px #ccc; }
 
 .widget-area {
   flex: 1; }
@@ -757,7 +776,8 @@ object {
 .site-content {
   display: flex;
   flex-direction: column;
-  padding: 15px; }
+  padding: 15px;
+  min-height: 90vh; }
 
 @media (min-width: 768px) {
   .top-bar {
@@ -774,6 +794,9 @@ object {
     transition: transform .3s; }
 
   .site-header {
-    margin-left: 0; } }
+    margin-left: 0; }
+
+  .widget-area {
+    margin-left: 15px; } }
 
 /*# sourceMappingURL=style.css.map */

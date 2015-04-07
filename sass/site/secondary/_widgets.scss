@@ -11,10 +11,13 @@
 
 	h1 {
   	font-weight: 200;
-    background: $color__light-gray;
+    background: $color__gray;
     margin: 0 -15px 10px;
-    padding: 0 15px;
-    font-size: 1.4em;
+    padding: 8px 15px;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: White;
+    font-weight: 600;
 
 	}
 

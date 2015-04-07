@@ -33,6 +33,16 @@
   margin-bottom:30px;
 }
 
+.site-main:hover {
+
+  box-shadow: 0 0 8px #aaa;
+
+  .entry-title {
+    color: $color__secondary;
+  }
+
+}
+
 .widget-area{
   flex:1;
 
